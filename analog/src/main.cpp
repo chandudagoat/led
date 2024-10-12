@@ -1,6 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <Arduino.h>
 
-int greenPin = 9;
+int greenPin = 10;
 
 void setup()
 {
@@ -9,5 +11,8 @@ void setup()
 
 void loop()
 {
-  analogWrite(greenPin, 40);
+  analogWrite(greenPin, 225);
+  delay(1000);
+  analogWrite(greenPin, 10);
+  delay(1000);
 }
